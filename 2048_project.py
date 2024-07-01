@@ -232,7 +232,7 @@ class Play_2048(Tk):
             if 0 in row:
                 return False
         return True
-
+ 
     def game_over(self):
         if self.full() and not self.can_merge():
             self.canvas.create_text(200, 200, text="Game Over", font=("Arial", 36), fill="red")
